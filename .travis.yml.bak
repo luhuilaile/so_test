@@ -5,6 +5,7 @@ python:
 install: "pip install -r requirements.txt"
 # command to run tests
 script:
+  - sudo apt-get install ia32-libs*
   - dpkg --print-architecture
   - dpkg --print-foreign-architectures
   - sudo dpkg --add-architecture i386
