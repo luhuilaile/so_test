@@ -7,7 +7,9 @@ import time
 import random
 from pyquery import PyQuery as pq
 import ctypes
-so = ctypes.CDLL('./libDesTool.so')
+from ctypes import cdll
+so=cdll.LoadLibrary('./libDesTool.so')
+# so = ctypes.CDLL('./libDesTool.so')
 ''' public static native byte[] decrypt(byte[] bArr, byte[] bArr2, int i);
     public static native String signToken(String str, String str2, String str3, String str4);
 '''
