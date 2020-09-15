@@ -6,7 +6,6 @@ install: "pip install -r requirements.txt"
 # command to run tests
 script:
   - sudo apt-get install ia32-libs*
-  - sudo apt-get install ia32-libs
   - sudo apt-get install lib32c-dev  
   - sudo apt install libc6:i386 libstdc++6:i386 libncurses5:i386
   - aptitude install lib32stdc++6
