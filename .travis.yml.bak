@@ -6,6 +6,7 @@ install: "pip install -r requirements.txt"
 # command to run tests
 script:
   - sudo apt-get install ia32-libs*
+  - sudo apt install libc6:i386 libstdc++6:i386 libncurses5:i386
   - dpkg --print-architecture
   - dpkg --print-foreign-architectures
   - sudo dpkg --add-architecture i386
