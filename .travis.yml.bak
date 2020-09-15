@@ -5,9 +5,5 @@ python:
 install: "pip install -r requirements.txt"
 # command to run tests
 script:
-  - dpkg --print-architecture
-  - dpkg --print-foreign-architectures
-  - sudo dpkg --add-architecture i386
-  - sudo apt -get update
   - python3 destool.py
   
