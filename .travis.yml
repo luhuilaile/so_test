@@ -13,6 +13,6 @@ script:
   - dpkg --print-foreign-architectures
   - sudo dpkg --add-architecture i386
   - sudo apt -get update
-  - ldd libDesTool.so
+  - ldd ./libDesTool.so
   - python3 destool.py
   
